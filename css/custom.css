@@ -1,0 +1,32 @@
+.nav-desktop-container {
+  background-color: white;
+  padding-top: 20px;
+  text-align: right;
+  z-index: 1;
+}
+
+.capitals {
+  text-transform: uppercase;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.borderless {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.granny-icon {
+  height: 50vh;
+}
+
+#icon-mention {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

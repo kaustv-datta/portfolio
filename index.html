@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>CodeGranny</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="external/fullpage/fullpage.min.css"
+    />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Navbar -->
+    <div class="container nav-desktop-container">
+      <div class="row">
+        <div class="twelve columns" id="nav-menu">
+          <button data-menuanchor="services" onclick="moveToServices()">
+            services
+          </button>
+          <button data-menuanchor="about" onclick="moveToAbout()">
+            about granny
+          </button>
+          <button
+            class="button-primary"
+            data-menuanchor="contact"
+            onclick="moveToContact()"
+          >
+            contact granny
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container nav-mobile-container"></div>
+
+    <!-- End Navbar -->
+
+    <!-- Main layout -->
+    <div class="container">
+      <div class="row">
+        <div id="fullpage">
+          <div class="section">
+            <div class="row">
+              <div class="twelve columns align-center" lang="en">
+                <img class="granny-icon" src="./images/grandmother.svg" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns align-center" lang="en">
+                <!-- <p class="hero-font">CodeGranny</p> -->
+                <h1>CodeGranny</h1>
+              </div>
+            </div>
+          </div>
+          <div class="section">SERVICES</div>
+          <div class="section">ABOUT</div>
+          <div class="section">CONTACT</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credits -->
+    <div>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+        >Freepik</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="external/fullpage/fullpage.min.js"
+    ></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
