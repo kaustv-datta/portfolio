@@ -23,12 +23,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
-    <link rel="stylesheet" href="css/custom.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="external/fullpage/fullpage.min.css"
     />
+    <!-- <link rel="stylesheet" href="css/animate.css" /> -->
+    <link rel="stylesheet" href="css/custom.css" />
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -42,18 +43,26 @@
     <div class="container nav-desktop-container">
       <div class="row">
         <div class="twelve columns" id="nav-menu">
-          <button data-menuanchor="services" onclick="moveToServices()">
+          <button
+            class="nav-btn-secondary"
+            data-menuanchor="services"
+            onclick="moveToServices()"
+          >
             services
           </button>
-          <button data-menuanchor="about" onclick="moveToAbout()">
+          <button
+            class="nav-btn-secondary"
+            data-menuanchor="about"
+            onclick="moveToAbout()"
+          >
             about granny
           </button>
           <button
-            class="button-primary"
+            class="button-primary nav-btn-primary"
             data-menuanchor="contact"
             onclick="moveToContact()"
           >
-            contact granny
+            contact
           </button>
         </div>
       </div>
@@ -64,37 +73,122 @@
 
     <!-- Main layout -->
     <div class="container">
-      <div class="row">
-        <div id="fullpage">
-          <div class="section">
+      <div id="fullpage">
+        <div class="section">
+          <div class="row">
+            <div class="twelve columns align-center">
+              <img class="hero-icon" src="./images/grandmother.svg" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="twelve columns align-center">
+              <h1>CodeGranny</h1>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="slide" data-anchor="slide1">
             <div class="row">
-              <div class="twelve columns align-center" lang="en">
-                <img class="granny-icon" src="./images/grandmother.svg" />
+              <div class="twelve columns align-center">
+                <img
+                  class="sub-hero-icon"
+                  src="./images/responsive-design.svg"
+                />
               </div>
             </div>
             <div class="row">
-              <div class="twelve columns align-center" lang="en">
-                <!-- <p class="hero-font">CodeGranny</p> -->
-                <h1>CodeGranny</h1>
+              <div class="twelve columns align-center">
+                <h2>Web Development</h2>
+              </div>
+            </div>
+            <div class="row align-center">
+              <div class="three columns">React</div>
+              <div class="three columns">Node.js</div>
+              <div class="three columns">JavaScript</div>
+              <div class="three columns">HTML/CSS</div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide2">
+            <div class="row">
+              <div class="twelve columns align-center">
+                <img class="sub-hero-icon" src="./images/brain.svg" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns align-center">
+                <h2>AI Consulting</h2>
+              </div>
+            </div>
+            <div class="row align-center">
+              <div class="three columns">NLP</div>
+              <div class="three columns">Deep Learning</div>
+              <div class="three columns">Computer Vision</div>
+              <div class="three columns">Machine Learning</div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="twelve columns align-center">
+              <img class="sub-sub-hero-icon" src="./images/man.svg" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="twelve columns align-center">
+              <p>
+                CodeGranny is the alter ego of a grown up man who loves his
+                granny. He is an Artificial Intelligence graduate, a software
+                developer and a horrible cook currently based out of the
+                Netherlands.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <form>
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleEmailInput">Your email</label>
+                <input
+                  class="u-full-width"
+                  type="email"
+                  placeholder="you@mailbox.com"
+                  id="exampleEmailInput"
+                />
+              </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea
+              class="u-full-width"
+              placeholder="Hi Granny …"
+              id="exampleMessage"
+            ></textarea>
+            <button class="button-primary contact-btn" type="submit">
+              Message Granny
+            </button>
+          </form>
+          <div class="row">
+            <div class="twelve columns">
+              <div class="u-pull-right">
+                Icons made by
+                <a
+                  href="https://www.flaticon.com/authors/freepik"
+                  title="Freepik"
+                  >Freepik</a
+                >
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon"
+                  >www.flaticon.com</a
+                >
               </div>
             </div>
           </div>
-          <div class="section">SERVICES</div>
-          <div class="section">ABOUT</div>
-          <div class="section">CONTACT</div>
         </div>
       </div>
     </div>
 
     <!-- Credits -->
-    <div>
-      Icons made by
-      <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-        >Freepik</a
-      >
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-    </div>
+    <div></div>
 
     <!-- Scripts -->
     <script

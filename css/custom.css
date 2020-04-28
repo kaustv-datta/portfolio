@@ -1,8 +1,30 @@
 .nav-desktop-container {
-  background-color: white;
   padding-top: 20px;
   text-align: right;
   z-index: 1;
+}
+
+.nav-btn-secondary {
+  border-style: none;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+.nav-btn-secondary:active {
+  box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;
+}
+
+.nav-btn-primary,
+.contact-btn {
+  background: #33c3f0;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+.nav-btn-primary:active,
+.contact-btn:active {
+  box-shadow: inset 20px 20px 60px #2ba6cc, inset -20px -20px 60px #3be0ff;
+}
+
+#fullpage .fp-slidesNav {
+  text-align: center;
 }
 
 .capitals {
@@ -21,12 +43,24 @@
   display: none;
 }
 
-.granny-icon {
+.hero-icon {
   height: 50vh;
+}
+
+.sub-hero-icon {
+  height: 40vh;
+}
+
+.sub-sub-hero-icon {
+  height: 30vh;
 }
 
 #icon-mention {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#exampleMessage {
+  resize: none;
 }

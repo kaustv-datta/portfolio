@@ -1,9 +1,14 @@
 const fullpage_api = new fullpage("#fullpage", {
   //options here
   anchors: ["home", "services", "about", "contact"],
+  controlArrows: false,
   menu: "#nav-menu",
   autoScrolling: true,
   scrollHorizontally: true,
+  navigation: true,
+  navigationPosition: "right",
+  slidesNavigation: true,
+  slidesNavPosition: "top",
 });
 
 const moveToServices = function () {
