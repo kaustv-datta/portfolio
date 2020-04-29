@@ -44,11 +44,22 @@
 }
 
 .hero-icon {
-  height: 50vh;
+  height: 40vh;
+}
+
+.hero-section {
+  background-color: white;
+  background-image: linear-gradient(
+      90deg,
+      rgba(51, 195, 240, 0.05) 50%,
+      transparent 50%
+    ),
+    linear-gradient(rgba(51, 195, 240, 0.05) 50%, transparent 50%);
+  background-size: 50px 50px;
 }
 
 .sub-hero-icon {
-  height: 40vh;
+  height: 30vh;
 }
 
 .sub-sub-hero-icon {

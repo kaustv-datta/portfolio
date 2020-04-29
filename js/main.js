@@ -1,6 +1,13 @@
 const fullpage_api = new fullpage("#fullpage", {
   //options here
-  anchors: ["home", "services", "about", "contact"],
+  anchors: [
+    "home",
+    "services-1",
+    "services-2",
+    "services-3",
+    "about",
+    "contact",
+  ],
   controlArrows: false,
   menu: "#nav-menu",
   autoScrolling: true,
@@ -12,7 +19,7 @@ const fullpage_api = new fullpage("#fullpage", {
 });
 
 const moveToServices = function () {
-  fullpage_api.moveTo("services");
+  fullpage_api.moveTo("services-1");
 };
 
 const moveToAbout = function () {
