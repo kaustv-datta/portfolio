@@ -29,3 +29,39 @@ const moveToAbout = function () {
 const moveToContact = function () {
   fullpage_api.moveTo("contact");
 };
+
+$(() => {
+  $("#send-msg-btn").click(() => {
+    const form = $("#granny-contact-form").get(0);
+
+    form.reportValidity();
+
+    if (form.checkValidity()) {
+      $.post(
+        "nodejs/sendMail",
+        {
+          email: $("#exampleEmailInput").val(),
+          message: $("#exampleMessage").val(),
+        },
+        (data) => {
+          if (data.success) {
+            $("body").overhang({
+              type: "success",
+              message: "Woohoo! Granny got your message!",
+            });
+            $("#exampleEmailInput").val("");
+            $("#exampleMessage").val("");
+          } else {
+            $("body").overhang({
+              type: "error",
+              html: true,
+              message:
+                "Oops! Something went wrong! Mail granny at <a href='mailto:info@codegranny.com'>info@codegranny.com</a>",
+              closeConfirm: true,
+            });
+          }
+        }
+      );
+    }
+  });
+});

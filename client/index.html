@@ -28,6 +28,11 @@
       type="text/css"
       href="external/fullpage/fullpage.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="external/overhang/overhang.min.css"
+    />
     <!-- <link rel="stylesheet" href="css/animate.css" /> -->
     <link rel="stylesheet" href="css/custom.css" />
 
@@ -74,6 +79,7 @@
     <!-- Main layout -->
     <div class="container">
       <div id="fullpage">
+        <!-- CODEGRANNY HERO -->
         <div class="section hero-section">
           <div class="row">
             <div class="twelve columns align-center">
@@ -93,7 +99,15 @@
             </p>
           </div>
         </div>
+        <!-- end of CODEGRANNY HERO -->
+
+        <!-- SERVICES -->
         <div class="section">
+          <div class="row">
+            <div class="twelve columns align-center capitals">
+              <h2>Services</h2>
+            </div>
+          </div>
           <div class="row">
             <div class="twelve columns align-center">
               <img class="sub-hero-icon" src="./images/responsive-design.svg" />
@@ -101,7 +115,7 @@
           </div>
           <div class="row">
             <div class="twelve columns align-center">
-              <h2>Website Development</h2>
+              <h3>Website Development</h3>
             </div>
           </div>
           <div class="row align-center">
@@ -119,7 +133,7 @@
           </div>
           <div class="row">
             <div class="twelve columns align-center">
-              <h2>Mobile Development</h2>
+              <h3>Mobile Development</h3>
             </div>
           </div>
           <div class="row align-center">
@@ -137,7 +151,7 @@
           </div>
           <div class="row">
             <div class="twelve columns align-center">
-              <h2>AI Consulting</h2>
+              <h3>AI Consulting</h3>
             </div>
           </div>
           <div class="row align-center">
@@ -148,6 +162,9 @@
             </p>
           </div>
         </div>
+        <!-- end of SERVICES -->
+
+        <!-- ABOUT -->
         <div class="section">
           <div class="row">
             <div class="twelve columns align-center">
@@ -175,8 +192,16 @@
             </div>
           </div>
         </div>
+        <!-- end of ABOUT -->
+
+        <!-- CONTACT -->
         <div class="section">
-          <form>
+          <div class="row">
+            <div class="twelve columns align-center capitals">
+              <h2>E-Mail Granny</h2>
+            </div>
+          </div>
+          <form id="granny-contact-form">
             <div class="row">
               <div class="six columns">
                 <label for="exampleEmailInput">Your email</label>
@@ -185,6 +210,7 @@
                   type="email"
                   placeholder="you@mailbox.com"
                   id="exampleEmailInput"
+                  required="required"
                 />
               </div>
             </div>
@@ -193,9 +219,14 @@
               class="u-full-width"
               placeholder="Hi Granny …"
               id="exampleMessage"
+              required="required"
             ></textarea>
-            <button class="button-primary contact-btn" type="submit">
-              Message Granny
+            <button
+              class="button-primary contact-btn"
+              id="send-msg-btn"
+              type="button"
+            >
+              Send
             </button>
           </form>
           <div class="row">
@@ -215,6 +246,7 @@
             </div>
           </div>
         </div>
+        <!-- end of CONTACT -->
       </div>
     </div>
 
@@ -225,6 +257,18 @@
     <script
       type="text/javascript"
       src="external/fullpage/fullpage.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="external/jquery/jquery-3.5.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="external/jquery/jquery-ui.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="external/overhang/overhang.min.js"
     ></script>
     <script type="text/javascript" src="js/main.js" defer></script>
     <!-- End Document
