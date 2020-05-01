@@ -13,13 +13,17 @@
   box-shadow: inset 20px 20px 60px #d9d9d9, inset -20px -20px 60px #ffffff;
 }
 
-.nav-btn-primary,
-.contact-btn {
+.custom-button-primary {
+  border: none;
+  color: #ffffff;
   background: #33c3f0;
   box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
-.nav-btn-primary:active,
-.contact-btn:active {
+.custom-button-primary:hover,
+.custom-button-primary:focus {
+  color: #ffffff;
+}
+.custom-button-primary:active {
   box-shadow: inset 20px 20px 60px #2ba6cc, inset -20px -20px 60px #3be0ff;
 }
 
