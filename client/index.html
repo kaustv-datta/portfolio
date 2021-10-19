@@ -1,292 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8" />
-    <title>CodeGranny - Web Development Services</title>
-    <meta
-      name="description"
-      content="Hire freelancer for web development, mobile application development and artificial intelligence consulting"
-    />
-    <meta name="author" content="Kaustav Datta" />
 
-    <!-- Mobile Specific Metas
+<head>
+  <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>CodeGranny - Web Development Services</title>
+  <meta name="title" content="CodeGranny - Web Development Services" />
+  <meta name="description"
+    content="Hire freelancer for web development, mobile application development and artificial intelligence consulting" />
+  <meta name="author" content="Kaustav Datta" />
+  <link rel="image_src" href="images/codegranny.png" />
 
-    <!-- FONT
+  <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS
+  <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
-    <!-- <link rel="stylesheet" href="css/skeleton.css" /> -->
-    <link rel="stylesheet" href="css/minified.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="external/fullpage/fullpage.min.css"
-    />
-    <!-- <link
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+  <!-- <link rel="stylesheet" href="css/skeleton.css" /> -->
+  <link rel="stylesheet" href="css/minified.css" />
+  <link rel="stylesheet" type="text/css" href="external/fullpage/fullpage.min.css" />
+  <!-- <link
       rel="stylesheet"
       type="text/css"
       href="external/overhang/overhang.min.css"
     />
     <link rel="stylesheet" href="css/custom.css" /> -->
 
-    <!-- Favicon
+  <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-  </head>
-  <body>
-    <!-- Primary Page Layout
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+  <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <!-- Navbar -->
-    <div class="container nav-desktop-container">
-      <div class="row">
-        <div class="twelve columns" id="nav-menu">
-          <button
-            class="nav-btn-secondary"
-            data-menuanchor="services"
-            onclick="moveToServices()"
-          >
-            services
-          </button>
-          <button
-            class="nav-btn-secondary"
-            data-menuanchor="about"
-            onclick="moveToAbout()"
-          >
-            huh! granny?
-          </button>
-          <button
-            class="custom-button-primary"
-            data-menuanchor="contact"
-            onclick="moveToContact()"
-          >
-            contact
-          </button>
-        </div>
+  <!-- Navbar -->
+  <div class="container nav-desktop-container">
+    <div class="row">
+      <div class="twelve columns" id="nav-menu">
+        <button class="nav-btn-secondary" data-menuanchor="services" onclick="moveToServices()">
+          services
+        </button>
+        <button class="nav-btn-secondary" data-menuanchor="about" onclick="moveToAbout()">
+          huh! granny?
+        </button>
+        <button class="custom-button-primary" data-menuanchor="contact" onclick="moveToContact()">
+          contact
+        </button>
       </div>
     </div>
-    <div class="container nav-mobile-container"></div>
+  </div>
+  <div class="container nav-mobile-container"></div>
 
-    <!-- End Navbar -->
+  <!-- End Navbar -->
 
-    <!-- Main layout -->
-    <div class="container">
-      <div id="fullpage">
-        <!-- CODEGRANNY HERO -->
-        <div class="section hero-section">
-          <div class="row">
-            <div class="twelve columns align-center">
-              <img
-                alt="code granny icon"
-                class="hero-icon"
-                src="./images/grandmother.svg"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns align-center">
-              <h1>CodeGranny</h1>
-            </div>
-          </div>
-          <div class="row align-center">
-            <h5>
-              Your one-stop boutique for <strong>Web</strong>,
-              <strong>Mobile</strong> and <strong>A.I.</strong>
-              application development.
-            </h5>
+  <!-- Main layout -->
+  <div class="container">
+    <div id="fullpage">
+      <!-- CODEGRANNY HERO -->
+      <div class="section hero-section">
+        <div class="row">
+          <div class="twelve columns align-center">
+            <img alt="code granny icon" class="hero-icon" src="./images/grandmother.svg" />
           </div>
         </div>
-        <!-- end of CODEGRANNY HERO -->
-
-        <!-- SERVICES -->
-        <div class="section">
-          <div class="row">
-            <div class="twelve columns align-center capitals">
-              <h2>Services</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns align-center">
-              <img
-                alt="website development icon"
-                class="sub-hero-icon"
-                src="./images/responsive-design.svg"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns align-center">
-              <h3>Website Development</h3>
-            </div>
-          </div>
-          <div class="row align-center">
-            <p>
-              Granny can help you build responsive <strong>Custom</strong> or
-              <strong>Wordpress</strong> websites.
-            </p>
+        <div class="row">
+          <div class="twelve columns align-center">
+            <h1>CodeGranny</h1>
           </div>
         </div>
-        <div class="section">
-          <div class="row">
-            <div class="twelve columns align-center">
-              <img
-                alt="mobile application development icon"
-                class="sub-hero-icon"
-                src="./images/mobile.svg"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns align-center">
-              <h3>Mobile Development</h3>
-            </div>
-          </div>
-          <div class="row align-center">
-            <p>
-              Granny can help you build cross-platform apps using
-              <strong>React Native</strong> or <strong>Flutter</strong>.
-            </p>
-          </div>
+        <div class="row align-center">
+          <h5>
+            Your one-stop boutique for <strong>Web</strong>,
+            <strong>Mobile</strong> and <strong>A.I.</strong>
+            application development.
+          </h5>
         </div>
-        <div class="section">
-          <div class="row">
-            <div class="twelve columns align-center">
-              <img
-                alt="artificial intelligence consulting icon"
-                class="sub-hero-icon"
-                src="./images/brain.svg"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns align-center">
-              <h3>AI Consulting</h3>
-            </div>
-          </div>
-          <div class="row align-center">
-            <p>
-              Granny can help you build <strong>Chatbots</strong> and
-              <strong>Computer Vision</strong> and
-              <strong>Machine Learning</strong> based applications.
-            </p>
-          </div>
-        </div>
-        <!-- end of SERVICES -->
-
-        <!-- ABOUT -->
-        <div class="section">
-          <div class="row">
-            <div class="twelve columns align-center">
-              <img
-                alt="who is granny icon"
-                class="sub-sub-hero-icon"
-                src="./images/man.svg"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns align-center">
-              <h3>Who is granny?</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="twelve columns align-center">
-              <p>
-                CodeGranny is the alter ego of a <strong>Freelancer</strong> who
-                loves his granny. He is a <strong>Software Developer</strong>,
-                an <strong>AI Graduate</strong> and a horrible cook currently
-                based in the <strong>Netherlands</strong>. You can find him on
-                <a
-                  href="https://www.linkedin.com/in/kaustv-datta/"
-                  target="_blank"
-                  ><strong>LinkedIn</strong></a
-                >.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- end of ABOUT -->
-
-        <!-- CONTACT -->
-        <div class="section">
-          <div class="row">
-            <div class="twelve columns align-center capitals">
-              <h2>E-Mail Granny</h2>
-            </div>
-          </div>
-          <form id="granny-contact-form">
-            <div class="row">
-              <div class="six columns">
-                <label for="exampleEmailInput">Your email</label>
-                <input
-                  class="u-full-width"
-                  type="email"
-                  placeholder="you@mailbox.com"
-                  id="exampleEmailInput"
-                  required="required"
-                />
-              </div>
-            </div>
-            <label for="exampleMessage">Message</label>
-            <textarea
-              class="u-full-width"
-              placeholder="Hi Granny …"
-              id="exampleMessage"
-              required="required"
-            ></textarea>
-            <button
-              class="custom-button-primary"
-              id="send-msg-btn"
-              type="button"
-            >
-              Send
-            </button>
-          </form>
-          <div class="row">
-            <div class="twelve columns">
-              <div class="u-pull-right">
-                <p>VAT: NL003260845B12</p>
-              </div>
-            </div>
-            <div class="twelve columns">
-              <div class="u-pull-right">
-                Icons made by
-                <a
-                  href="https://www.flaticon.com/authors/freepik"
-                  title="Freepik"
-                  >Freepik</a
-                >
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon"
-                  >www.flaticon.com</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of CONTACT -->
       </div>
+      <!-- end of CODEGRANNY HERO -->
+
+      <!-- SERVICES -->
+      <div class="section">
+        <div class="row">
+          <div class="twelve columns align-center capitals">
+            <h2>Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns align-center">
+            <img alt="website development icon" class="sub-hero-icon" src="./images/responsive-design.svg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns align-center">
+            <h3>Website Development</h3>
+          </div>
+        </div>
+        <div class="row align-center">
+          <p>
+            Granny can help you build responsive <strong>Custom</strong> or
+            <strong>Wordpress</strong> websites.
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="twelve columns align-center">
+            <img alt="mobile application development icon" class="sub-hero-icon" src="./images/mobile.svg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns align-center">
+            <h3>Mobile Development</h3>
+          </div>
+        </div>
+        <div class="row align-center">
+          <p>
+            Granny can help you build cross-platform apps using
+            <strong>React Native</strong> or <strong>Flutter</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="twelve columns align-center">
+            <img alt="artificial intelligence consulting icon" class="sub-hero-icon" src="./images/brain.svg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns align-center">
+            <h3>AI Consulting</h3>
+          </div>
+        </div>
+        <div class="row align-center">
+          <p>
+            Granny can help you build <strong>Chatbots</strong> and
+            <strong>Computer Vision</strong> and
+            <strong>Machine Learning</strong> based applications.
+          </p>
+        </div>
+      </div>
+      <!-- end of SERVICES -->
+
+      <!-- ABOUT -->
+      <div class="section">
+        <div class="row">
+          <div class="twelve columns align-center">
+            <img alt="who is granny icon" class="sub-sub-hero-icon" src="./images/man.svg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns align-center">
+            <h3>Who is granny?</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns align-center">
+            <p>
+              CodeGranny is the alter ego of a <strong>Freelancer</strong> who
+              loves his granny. He is a <strong>Software Developer</strong>,
+              an <strong>AI Graduate</strong> and a horrible cook currently
+              based in the <strong>Netherlands</strong>. You can find him on
+              <a href="https://www.linkedin.com/in/kaustv-datta/" target="_blank"><strong>LinkedIn</strong></a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of ABOUT -->
+
+      <!-- CONTACT -->
+      <div class="section">
+        <div class="row">
+          <div class="twelve columns align-center capitals">
+            <h2>E-Mail Granny</h2>
+          </div>
+        </div>
+        <form id="granny-contact-form">
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="you@mailbox.com" id="exampleEmailInput"
+                required="required" />
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Granny …" id="exampleMessage" required="required"></textarea>
+          <button class="custom-button-primary" id="send-msg-btn" type="button">
+            Send
+          </button>
+        </form>
+        <div class="row">
+          <div class="twelve columns">
+            <div class="u-pull-right">
+              <p>VAT: NL003260845B12</p>
+            </div>
+          </div>
+          <div class="twelve columns">
+            <div class="u-pull-right">
+              Icons made by
+              <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+              from
+              <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of CONTACT -->
     </div>
+  </div>
 
-    <!-- Credits -->
-    <div></div>
+  <!-- Credits -->
+  <div></div>
 
-    <!-- Scripts -->
-    <script
-      type="text/javascript"
-      src="external/fullpage/fullpage.min.js"
-    ></script>
-    <!-- <script
+  <!-- Scripts -->
+  <script type="text/javascript" src="external/fullpage/fullpage.min.js"></script>
+  <!-- <script
       type="text/javascript"
       src="external/jquery/jquery-3.5.0.min.js"
     ></script>
@@ -298,8 +234,9 @@
       type="text/javascript"
       src="external/overhang/overhang.min.js"
     ></script> -->
-    <script type="text/javascript" src="js/minified.js" defer></script>
-    <!-- End Document
+  <script type="text/javascript" src="js/minified.js" defer></script>
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  </body>
+</body>
+
 </html>
