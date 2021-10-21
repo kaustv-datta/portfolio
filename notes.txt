@@ -1,6 +1,14 @@
 CREDITS
 -------
-Granny
 <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-Web design
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+- virtual host
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04#step-5-%E2%80%94-setting-up-virtual-hosts-recommended
+- firewall
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04
+- setup mail server
+https://www.linuxhowto.net/how-to-setup-a-complete-mail-server-postfix-using-squirrelmail-webmail-on-ubuntu-debian/
+- mail TLS
+https://www.linuxbabe.com/mail-server/setting-up-dkim-and-spf
+- allow incoming mail
+https://gist.github.com/mrothNET/cb6f313e9cbe896f3e0fdec80ad2f3fa
